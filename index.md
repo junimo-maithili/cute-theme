@@ -2,5 +2,5 @@
 title: Home
 ---
 
-# cute-theme
+# jekyll-theme
 # A cute theme for Jekyll!
