@@ -1,6 +1,37 @@
-<html>
+<html data-theme="dark">
+
     {% include head.html %}
   <body>
     {{ content }}
-  </body>
+    <button id="theme-toggle" onclick="modeSwitcher()">{toggle_symbol}</button>
+
+<script>
+    const toggleButton = document.getElementById('theme-toggle');
+    document.addEventListener("DOMContentLoaded", () => {
+    toggleButton.textContent = "☀️✨";
+        let currentTheme = document.documentElement.getAttribute("data-theme");
+        if (currentTheme === "light") {
+            toggleButton.textContent = "✨💫";
+        }
+    });
+    
+    function modeSwitcher() {
+        let currentTheme = document.documentElement.getAttribute("data-theme");
+
+        if (!currentTheme) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+
+        if (currentTheme === "dark") {
+            toggleButton.textContent = "✨💫";
+            document.documentElement.setAttribute("data-theme", "light");
+        } else {
+            toggleButton.textContent = "☀️✨"
+            document.documentElement.setAttribute("data-theme", "dark");
+        }
+    }
+
+  </script>
+</body>
+
 </html>
