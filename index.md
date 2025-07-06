@@ -1,4 +1,6 @@
 ---
+title: Home
 ---
 
-# tonic-starter
+# cute-theme
+# A cute theme for Jekyll!
