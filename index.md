@@ -5,4 +5,4 @@ layout: default
 ---
 
 # jekyll-theme
-# A cute theme for Jekyll!
+A cute theme for Jekyll!
