@@ -1,19 +1,22 @@
 :root {
-  --lighter-text-color: #0FA4Af;
-  --darker-text-color: #024950;
-  --background-color: #AFDDE5;
+    --lighter-text-color: #0FA4Af;
+    --darker-text-color: #024950;
+    --background-color: #AFDDE5;
+    --button-color: #AFDDE5;
 }
 
 html[data-theme="dark"] {
-  --lighter-text-color: #AFDDE5;
-  --darker-text-color: #024950;
-  --background-color: #0FA4Af;
+    --lighter-text-color: #AFDDE5;
+    --darker-text-color: #024950;
+    --background-color: #0FA4Af;
+    --button-color: #024950;
 }
 
 html[data-theme="light"] {
-  --lighter-text-color: #0FA4Af;
-  --darker-text-color: #024950;
-  --background-color: #AFDDE5;
+    --lighter-text-color: #0FA4Af;
+    --darker-text-color: #024950;
+    --background-color: #AFDDE5;
+    --button-color: #024950;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,23 +24,32 @@ html[data-theme="light"] {
     --lighter-text-color: #AFDDE5;
     --darker-text-color: #024950;
     --background-color: #0FA4Af;
+    --button-color: #024950;
   }
 }
 
 body {
   background-color: var(--background-color);
   color: var(--lighter-text-color);
-  font-family: "DynaPuff", system-ui;
+  font-family: "Rubik", sans-serif;
   margin: auto;
   max-width: 70ch;
 }
 
+button {
+    background-color: var(--lighter-text-color);
+    color: var(--button-color);
+    border-radius: 10px;
+    border-width: 0px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
 
-.dynapuff{
-  font-family: "DynaPuff", system-ui;
+.rubik {
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 430;
   font-style: normal;
-  font-variation-settings:
-  "wdth" 100;
 }

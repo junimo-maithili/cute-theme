@@ -8,10 +8,10 @@
 <script>
     const toggleButton = document.getElementById('theme-toggle');
     document.addEventListener("DOMContentLoaded", () => {
-    toggleButton.textContent = "☀️✨";
+    toggleButton.textContent = "☼";
         let currentTheme = document.documentElement.getAttribute("data-theme");
         if (currentTheme === "light") {
-            toggleButton.textContent = "✨💫";
+            toggleButton.textContent = "☾";
         }
     });
     
@@ -23,10 +23,10 @@
         }
 
         if (currentTheme === "dark") {
-            toggleButton.textContent = "✨💫";
+            toggleButton.textContent = "☾";
             document.documentElement.setAttribute("data-theme", "light");
         } else {
-            toggleButton.textContent = "☀️✨"
+            toggleButton.textContent = "☼"
             document.documentElement.setAttribute("data-theme", "dark");
         }
     }
